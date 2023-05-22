@@ -1,0 +1,221 @@
+.laboratory-revervation-list {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding-top: 24px;
+}
+
+.revervation-list-wrapper {
+    width: 1280px;
+    // background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.revervation-list-title {
+    width: 100%;
+    height: 150px;
+    background-color: #FFFFFF;
+}
+
+.revervation-title-text {
+    padding: 0 24px;
+    height: 61px;
+    line-height: 61px;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #E9E9E9E9;
+}
+
+.revervation-operation {
+    display: flex;
+    height: calc(100% - 61px);
+    align-items: center;
+    padding: 0 24px;
+    justify-content: space-between;
+}
+
+.revervation-operation-search {
+    display: flex;
+    align-items: center;
+}
+.revervation-status {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    margin-right: 7px;
+}
+.revervation-status-notUsed {
+    border: 1px solid #999999;
+}
+.revervation-status-Ended {
+    background-color: rgba(10,106,240,0.24);;
+}
+.revervation-status-notStarted {
+    background-color: #0A6AF0;
+}
+
+.revervation-table {
+    padding-bottom: 48px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+.revervation-week {
+    width: 100%;
+}
+.week-top {
+    padding: 28px 24px 6px 33px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.week-top-day {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+}
+.week-top-date {
+    display: flex;
+    align-items: center;
+}
+.week-top-date-icon {
+    margin: 0 20px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.week-bottom {
+    background-color: #FFFFFF;
+    width: 1280px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    .week-bottom-number {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        >:nth-child(1) {
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            color: #333333;
+        }
+        >:nth-child(2) {
+            font-size: 16px;
+            text-align: center;
+            color: #666666;
+        }
+        >:nth-child(3) {
+            font-size: 16px;
+            text-align: center;
+            color: #333333;
+        }
+    }
+    .week-bottom-number-num {
+        font-size: 16px;
+        font-weight: 500;
+        color: #333333;
+        cursor: pointer;
+        display: inline-block;
+        width: 29px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        font-style: normal;
+    }
+    .week-bottom-number-active {
+        display: inline-block;
+        width: 29px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        background-color: #0A6AF0;
+        color: #FFFFFF!important;
+        font-style: normal;
+    }
+}
+
+.week-bottom-date-icon {
+    color: #0A6AF0;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.week-bottom-middle {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    :nth-child(7) {
+        margin-right: 20px;
+    }
+    :nth-child(1) {
+        margin-left: 10px;
+    }
+}
+.week-bottom-prev {
+    width: 100px;
+    flex-shrink: 0;
+    text-align: right;
+    margin-right: 10px;
+}
+.week-bottom-next  {
+    position: relative;
+    right: 35px;
+}
+.week-table-cell {
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.week-table-col {
+    height: 55px;
+    line-height: 55px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+}
+
+
+.week-table-container {
+    .ant-table-cell {
+        padding: 0!important;
+    }
+    .ant-table thead {
+        display: none;
+    }
+}
+
+.week-table-cell-over {
+    width: 100%;
+    background-color: #E1EDFD;
+    text-align: left;
+    color: #0A6AF0;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.week-table-cell-notStart {
+    width: 100%;
+    background-color: #0A6AF0;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+// .ant-table-row {
+//     &:hover > td {
+//         background-color: red!important;
+//         color: #fff!important;
+//     }
+//     &.row-selection {
+//         background-color: yellow!important;
+//         color: #fff!important;
+//     }
+// }
+
